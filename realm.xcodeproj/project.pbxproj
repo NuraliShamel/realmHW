@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		C39C65062BA8867200C2DA3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39C65052BA8867200C2DA3B /* AppDelegate.swift */; };
-		C39C65082BA8867200C2DA3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39C65072BA8867200C2DA3B /* SceneDelegate.swift */; };
 		C39C650A2BA8867200C2DA3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39C65092BA8867200C2DA3B /* ViewController.swift */; };
-		C39C650D2BA8867200C2DA3B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C39C650C2BA8867200C2DA3B /* Base */; };
 		C39C650F2BA8867400C2DA3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C39C650E2BA8867400C2DA3B /* Assets.xcassets */; };
 		C39C65122BA8867400C2DA3B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C39C65112BA8867400C2DA3B /* Base */; };
+		C39C651B2BA8898900C2DA3B /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = C39C651A2BA8898900C2DA3B /* Realm */; };
+		C39C651D2BA8898900C2DA3B /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C39C651C2BA8898900C2DA3B /* RealmSwift */; };
+		C39C65212BA89F9200C2DA3B /* realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39C65202BA89F9200C2DA3B /* realm.swift */; };
+		C39C65242BA8A0A300C2DA3B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C39C65232BA8A0A300C2DA3B /* SnapKit */; };
+		C39C65262BA8A0A300C2DA3B /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = C39C65252BA8A0A300C2DA3B /* SnapKit-Dynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C39C65022BA8867200C2DA3B /* realm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = realm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39C65052BA8867200C2DA3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C39C65072BA8867200C2DA3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C39C65092BA8867200C2DA3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C39C650C2BA8867200C2DA3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C39C650E2BA8867400C2DA3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C39C65112BA8867400C2DA3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C39C65132BA8867400C2DA3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C39C65202BA89F9200C2DA3B /* realm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = realm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C39C65242BA8A0A300C2DA3B /* SnapKit in Frameworks */,
+				C39C651D2BA8898900C2DA3B /* RealmSwift in Frameworks */,
+				C39C651B2BA8898900C2DA3B /* Realm in Frameworks */,
+				C39C65262BA8A0A300C2DA3B /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,9 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				C39C65052BA8867200C2DA3B /* AppDelegate.swift */,
-				C39C65072BA8867200C2DA3B /* SceneDelegate.swift */,
 				C39C65092BA8867200C2DA3B /* ViewController.swift */,
-				C39C650B2BA8867200C2DA3B /* Main.storyboard */,
+				C39C65202BA89F9200C2DA3B /* realm.swift */,
 				C39C650E2BA8867400C2DA3B /* Assets.xcassets */,
 				C39C65102BA8867400C2DA3B /* LaunchScreen.storyboard */,
 				C39C65132BA8867400C2DA3B /* Info.plist */,
@@ -83,6 +88,12 @@
 			dependencies = (
 			);
 			name = realm;
+			packageProductDependencies = (
+				C39C651A2BA8898900C2DA3B /* Realm */,
+				C39C651C2BA8898900C2DA3B /* RealmSwift */,
+				C39C65232BA8A0A300C2DA3B /* SnapKit */,
+				C39C65252BA8A0A300C2DA3B /* SnapKit-Dynamic */,
+			);
 			productName = realm;
 			productReference = C39C65022BA8867200C2DA3B /* realm.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,10 @@
 				Base,
 			);
 			mainGroup = C39C64F92BA8867200C2DA3B;
+			packageReferences = (
+				C39C65192BA8898900C2DA3B /* XCRemoteSwiftPackageReference "realm-swift" */,
+				C39C65222BA8A0A300C2DA3B /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = C39C65032BA8867200C2DA3B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +142,6 @@
 			files = (
 				C39C650F2BA8867400C2DA3B /* Assets.xcassets in Resources */,
 				C39C65122BA8867400C2DA3B /* Base in Resources */,
-				C39C650D2BA8867200C2DA3B /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +152,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C39C65212BA89F9200C2DA3B /* realm.swift in Sources */,
 				C39C650A2BA8867200C2DA3B /* ViewController.swift in Sources */,
 				C39C65062BA8867200C2DA3B /* AppDelegate.swift in Sources */,
-				C39C65082BA8867200C2DA3B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C39C650B2BA8867200C2DA3B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C39C650C2BA8867200C2DA3B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C39C65102BA8867400C2DA3B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +303,7 @@
 				INFOPLIST_FILE = realm/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +331,7 @@
 				INFOPLIST_FILE = realm/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -363,6 +369,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C39C65192BA8898900C2DA3B /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		C39C65222BA8A0A300C2DA3B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C39C651A2BA8898900C2DA3B /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C39C65192BA8898900C2DA3B /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		C39C651C2BA8898900C2DA3B /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C39C65192BA8898900C2DA3B /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		C39C65232BA8A0A300C2DA3B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C39C65222BA8A0A300C2DA3B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		C39C65252BA8A0A300C2DA3B /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C39C65222BA8A0A300C2DA3B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C39C64FA2BA8867200C2DA3B /* Project object */;
 }
